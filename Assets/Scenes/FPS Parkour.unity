@@ -366,6 +366,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthManager: {fileID: 0}
+  damagePoints: 85
 --- !u!114 &145409011
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1455,6 +1456,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthManager: {fileID: 0}
+  damagePoints: 15
 --- !u!1001 &791027968
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3898,7 +3900,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 0
-  maxHealthPuntos: 0
+  maxHealthPuntos: 100
   uiManager: {fileID: 0}
 --- !u!1001 &1900075194
 PrefabInstance:

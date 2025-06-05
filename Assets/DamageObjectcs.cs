@@ -5,6 +5,7 @@ using UnityEngine;
 public class DamageObjectcs : MonoBehaviour
 {
     public HealthManager healthManager;
+    public int damagePoints;
 
     public void Start()
     {
@@ -16,7 +17,7 @@ public class DamageObjectcs : MonoBehaviour
         if (col.gameObject.name == "Player")
         {
             Destroy(gameObject);
-            healthManager.TakeDamage(10);
+            healthManager.TakeDamage(damagePoints);
         }
 
     }

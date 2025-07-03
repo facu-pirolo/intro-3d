@@ -20,6 +20,7 @@ public class InteractioArea : MonoBehaviour
             if (canInteract)
             {
                 Destroy(mercaderia.gameObject);
+                EndInteraction();
             }
         }
     }
@@ -36,6 +37,13 @@ public class InteractioArea : MonoBehaviour
         
     }
     private void OnTriggerExit(Collider other)
+    {
+        UIInteraxtionMessage.SetActive(false);
+        mercaderia = null;
+        canInteract = false;
+    }
+
+    void EndInteraction()
     {
         UIInteraxtionMessage.SetActive(false);
         mercaderia = null;

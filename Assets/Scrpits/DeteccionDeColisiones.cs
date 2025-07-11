@@ -14,8 +14,7 @@ public class DeteccionDeColisiones : MonoBehaviour
 
     void OnCollisionEnter(Collision col)
     {
-        Debug.Log("Contacto con: " + col.gameObject.name);
-        if (col.gameObject.name == "Player")
+        if (col.gameObject.name == "SimpleFPSController")
         {
             Destroy(gameObject);
             scoreManager.AddScore(mercaderiaScript.ScorePoints);

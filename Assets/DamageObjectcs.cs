@@ -13,8 +13,7 @@ public class DamageObjectcs : MonoBehaviour
     }
     void OnCollisionEnter(Collision col)
     {
-        Debug.Log("Contacto");
-        if (col.gameObject.name == "Player")
+        if (col.gameObject.name == "SimpleFPSController")
         {
             Destroy(gameObject);
             healthManager.TakeDamage(damagePoints);
